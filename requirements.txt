@@ -1,0 +1,9 @@
+PyMuPDF
+langchain
+streamlit
+ollama
+uvicorn
+langchain-ollama
+faiss-cpu
+langchain-community
+joblib
