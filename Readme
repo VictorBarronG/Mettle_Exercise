@@ -1,4 +1,8 @@
-# How to Run Locally
+# Chatbot Demo
+
+This repository contains a chatbot built using the Ollama library, which is a Python wrapper for the LangChain AI framework. The chatbot is a Streamlit app that uses the `llama3.1` and `nomic-embed-text` models to generate responses to user queries.
+
+## Setup Instructions
 
 To run this Streamlit app locally, follow these steps:
 
@@ -6,10 +10,20 @@ To run this Streamlit app locally, follow these steps:
 2. Install Ollama by following the instructions on the [Ollama GitHub page](https://github.com/hwchase17/langchain-ollama).
 3. Download the `nomic-embed-text` model by running `ollama pull nomic-embed-text`.
 4. Download the `llama3.1` model by running `ollama pull llama3.1`.
-5. Once all dependencies are installed, run the Streamlit app by running `streamlit run app.py`.
-6. The first time you run the app, it may take 5-8 minutes to create the vector store, depending on your system resources.
-7. Once the app is running, you can interact with the chat window by asking a question.
-8. The app may take a few minutes to respond, depending on the complexity of the question.
+
+## Running the Application
+
+Once all dependencies are installed, run the Streamlit app by running `streamlit run app.py`. The first time you run the app, it may take 5-8 minutes to create the vector store, depending on your system resources. Once the app is running, you can interact with the chat window by asking a question. The app may take a few minutes to respond, depending on the complexity of the question.
+
+## Technology Overview
+
+The following tools were used to build this chatbot:
+
+* **Ollama**: A Python wrapper for the LangChain AI framework, which allows us to easily integrate the `llama3.1` and `nomic-embed-text` models into our application.
+* **Streamlit**: A Python library for creating interactive web applications, which we used to build the chat window and other UI elements.
+* **LangChain**: An AI framework for generating text based on input prompts, which we used to generate responses to user queries.
+* **llama3.1**: A language model that we used to generate responses to user queries.
+* **nomic-embed-text**: A model that we used to generate embeddings for the text input by the user.
 
 I have also included a notebook (`notebook.ipynb`) that you can use to run the functions separately and explore the relevant code chunks.
 
